@@ -171,3 +171,67 @@ urlpatterns = [
 
 ![IMAGE ALT TEXT HERE](https://github.com/vijaykumar10022/Form-Handling-using-a-basic-procedure-with-bootstrap4./blob/master/registeroutput.png)
 
+
+* User Get the Registration for show  above pic
+
+* when ever user Get This form to fill all the deatils  listed above and then to submit those data to views
+* in views to store respective information into respective fields into model
+* And than Rediect to Display  funtion in views
+* display funtion is to get all stored data into one variable
+* after that those data to convert dictionary because of easy to access data 
+
+## //Display.html
+~~~ html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::Display::</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<table class="table">
+  <caption>List of users</caption>
+  <thead>
+    <tr>
+      <th scope="col">FirstName</th>
+      <th scope="col">LastName</th>
+      <th scope="col">Email</th>
+      <th scope="col">Password</th>
+      <th scope="col">Date of Birth</th>
+      <th scope="col">Phone Number</th>
+      <th scope="col">Height</th>
+      <th scope="col">Weight</th>
+      <th scope="col">Gender</th>
+    </tr>
+  </thead>
+  <tbody>
+  	{% for i in data %}
+    <tr>
+      <td>{{i.firstName}}</td>
+      <td>{{i.lastName}}</td>
+      <td>{{i.email}}</td>
+      <td>{{i.password}}</td>
+      <td>{{i.birthDate}}</td>
+      <td>{{i.phoneNumber}}</td>
+      <td>{{i.height}}</td>
+      <td>{{i.weight}}</td>
+      <td>{{i.Gender}}</td>
+    </tr>
+    {% endfor%}
+  </tbody>
+</table>
+</div>
+</body>
+</html>
+~~~
+
+* here we have to  display all the information passed from the display funtion in views  in tabler format by using table html tags with bootstrap shown in below like that
+
+
+![IMAGE ALT TEXT HERE](https://github.com/vijaykumar10022/Form-Handling-using-a-basic-procedure-with-bootstrap4./blob/master/displaydata.png)
+
