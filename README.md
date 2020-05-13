@@ -46,10 +46,12 @@ class Register(models.Model):
 * after that we have to pass two commad to insert data to database
   * python manage.py makemigrations
   > to pass this command in particular project path
+  * makemigrations : It is used to create a migration file that contains code for the tabled schema of a model.
   ![IMAGE ALT TEXT HERE](https://github.com/vijaykumar10022/Form-Handling-using-a-basic-procedure-with-bootstrap4./blob/master/makemigrations.JPG)
-  
+ 
   * python manage.py migrate
   > this command is used to intrat with models to database
+  * migrate : It creates table according to the schema defined in the migration file.
   ![IMAGE ALT TEXT HERE](https://github.com/vijaykumar10022/Form-Handling-using-a-basic-procedure-with-bootstrap4./blob/master/migrate.JPG)
   
   
@@ -153,3 +155,19 @@ class Register(models.Model):
 </body>
 </html>
 ~~~
+* Provide the URL in urls.py
+~~~ python
+from django.contrib import admin
+from django.urls import path
+from form import views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('register/',views.form,name="form"),
+    path('display/',views.display,name="display"),
+]
+~~~
+## Run Server and access the form at browser by localhost:8000/register, and it will produce the following output.
+
+![IMAGE ALT TEXT HERE](https://github.com/vijaykumar10022/Form-Handling-using-a-basic-procedure-with-bootstrap4./blob/master/registeroutput.png)
+
