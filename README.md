@@ -1,6 +1,6 @@
 # Form-Handling-using-a-basic-procedure-with-bootstrap4.
 ## What is The Form?
-	* Form (HTML) A webform, web form or HTML form on a web page allows a user to enter data that is sent to a server for processing. Forms can resemble paper or database forms because web users fill out the forms using checkboxes, radio buttons, or text fields.
+* Form (HTML) A webform, web form or HTML form on a web page allows a user to enter data that is sent to a server for processing. Forms can resemble paper or database forms because web users fill out the forms using checkboxes, radio buttons, or text fields.
 ## Where Forms are using?
 * HTML Forms are required when you want to collect some data from the site visitor.
 	* For example during user registration you would like to collect information such as name, email,address, credit card, etc.
