@@ -2,19 +2,17 @@
 ## What is The Form?
 	* Form (HTML) A webform, web form or HTML form on a web page allows a user to enter data that is sent to a server for processing. Forms can resemble paper or database forms because web users fill out the forms using checkboxes, radio buttons, or text fields.
 ## Where Forms are using?
-	* HTML Forms are required when you want to collect some data from the site visitor.
-		* For example during user registration you would like to collect information such as name, email,address, credit card, etc.
-	* A form will take input from the site visitor and then will post it to a back-end application such as Django,Flask,CGI, ASP Script or PHP script etc.
-	* The back-end application will perform required processing on the passed data based on defined business logic inside the application.
+* HTML Forms are required when you want to collect some data from the site visitor.
+	* For example during user registration you would like to collect information such as name, email,address, credit card, etc.
+	* A form will take input from the site visitor and then will post it to a back-end application such as Django,Flask,CGI, ASP Script or 			PHP script etc.
+* The back-end application will perform required processing on the passed data based on defined business logic inside the application.
 ## Django Forms:
-  *
   * Django using models to store form information .
 
   * It is similar to the ModelForm class that creates a form by using the Model, but it does not require the Model.
 
   * Each field of the form class map to the HTML form &lt;input&gt; element and each one is a class itself, it manages form data and  
   performs validation while submitting the form.
-  *  
   ![IMAGE ALT TEXT HERE](https://github.com/vijaykumar10022/Form-Handling-using-a-basic-procedure-with-bootstrap4./blob/master/total%20image.JPG)
   
   * Here we are find to analyse to complete Form working mechanism in django  is shown in above image
