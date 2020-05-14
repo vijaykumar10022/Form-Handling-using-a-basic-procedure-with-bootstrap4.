@@ -1,7 +1,8 @@
 # Form-Handling-using-a-basic-procedure-with-bootstrap4.
 
 ## Django Forms:
-  * Django provides a Form class which is used to create HTML forms. It describes a form and how it works and appears.
+  * 
+  * Django with forms to carry information to the databases,cloud,servers ect
 
   * It is similar to the ModelForm class that creates a form by using the Model, but it does not require the Model.
 
